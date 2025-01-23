@@ -77,3 +77,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 Deploys the app to the `gh-pages` branch in your GitHub repo, creating one 
 if the branch doesn't exist. 
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=mateofr67_react-resume&metric=coverage)](https://sonarcloud.io/summary/new_code?id=mateofr67_react-resume)
