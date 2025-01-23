@@ -79,3 +79,5 @@ Deploys the app to the `gh-pages` branch in your GitHub repo, creating one
 if the branch doesn't exist. 
 
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=mateofr67_react-resume&metric=coverage)](https://sonarcloud.io/summary/new_code?id=mateofr67_react-resume)
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mateofr67_react-resume&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=mateofr67_react-resume)
