@@ -21,3 +21,24 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@v4
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+  ghpages:
+   name: Deploy to GitHub Pages
+   runs-on: ubuntu-latest
+   needs: sonarqube
+   steps:
+     - uses: actions/checkout@v4
+
+    # Instalar dependencias y construir el proyecto
+     - name: Install and Build
+       run: |
+         npm ci
+         npm run build  # Asegúrate de que este comando esté generando los archivos estáticos correctos
+
+    # Desplegar a GitHub Pages
+     - name: Deploy to GitHub Pages
+       uses: peaceiris/actions-gh-pages@v4
+       with:
+         github_token: ${{ secrets.GITHUB_TOKEN }}
+         publish_dir: ./build # Asegúrate de que ./build contiene los archivos generados por npm run build
+
