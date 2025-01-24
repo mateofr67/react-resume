@@ -46,10 +46,10 @@
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/**/*.{ts,tsx}",  // Incluir solo archivos de código fuente
-      "!src/**/*.test.tsx",  // Excluir archivos de prueba
-      "!src/**/*.spec.tsx"   // Excluir archivos de prueba adicionales
+      "src/**/*.{ts,tsx}",  
+      "!src/**/*.test.tsx",  
+      "!src/**/*.spec.tsx"  
     ],
-    "coverageReporters": ["text", "lcov"]  // Reportes de cobertura generados en LCOV
+    "coverageReporters": ["text", "lcov"] 
   }
 }
