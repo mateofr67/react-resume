@@ -42,5 +42,14 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",  // Incluir solo archivos de código fuente
+      "!src/**/*.test.tsx",  // Excluir archivos de prueba
+      "!src/**/*.spec.tsx"   // Excluir archivos de prueba adicionales
+    ],
+    "coverageReporters": ["text", "lcov"]  // Reportes de cobertura generados en LCOV
   }
 }
