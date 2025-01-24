@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import ThemeSwitcher from './ThemeSwitcher';  // Ruta al archivo del componente
+import ThemeSwitcher from './theme-switcher';  // Ruta al archivo del componente
 import '@testing-library/jest-dom';  // Asegúrate de tener este import para las aserciones de Jest
 
 test('no renderiza cuando enabled es falso', () => {
